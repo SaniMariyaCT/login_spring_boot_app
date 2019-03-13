@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DataApplication",
+            "request": "launch",
+            "mainClass": "com.users.data.DataApplication",
+            "projectName": "data"
+        }
+    ]
+}
