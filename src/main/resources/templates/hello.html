@@ -6,7 +6,8 @@
     </head>
     <body>
         <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
-        <form th:action="@{/logout}" method="post">
+        <!-- Expressions between [[...]] are considered expression inlining in Thymeleaf. th:inline attribute, which has three possible values or modes (text, javascript and none) -->
+        <form th:action="@{/logout}" method="post">               <!--    action attribute in the form tag  -->
             <input type="submit" value="Sign Out"/>
         </form>
     </body>
